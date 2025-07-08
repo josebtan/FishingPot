@@ -1,0 +1,43 @@
+# FishingPot v1.2.0 configuration
+
+# Intervalo promedio en segundos entre cada intento de pesca
+average-interval-seconds: 25
+
+# Probabilidades globales (suman <= 1.0). El remanente es la probabilidad de "nada"
+categories:
+  fish: 0.70
+  junk: 0.10
+  treasure: 0.05
+
+# Pesos relativos dentro de cada categoría (basado en la tabla de pesca de Minecraft)
+fish:
+  COD: 70
+  SALMON: 20
+  TROPICAL_FISH: 5
+  PUFFERFISH: 5
+
+junk:
+  BOW: 10
+  FISHING_ROD: 10
+  LEATHER_BOOTS: 10
+  NAUTILUS_SHELL: 5      # al azar también puede salir como junk
+  LILY_PAD: 5
+  BOWL: 5
+  STICK: 5
+  BONE: 5
+  STRING: 5
+  LEATHER: 5
+
+treasure:
+  BOW:
+    weight: 5
+    enchantments:
+      UNBREAKING: 3
+      MENDING: 1
+  ENCHANTED_BOOK:
+    weight: 5
+    enchantments:
+      LOOT_BONUS_FISHING: 3
+  NAME_TAG: 5
+  NAUTILUS_SHELL: 5
+  SADDLE: 5
